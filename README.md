@@ -2,7 +2,7 @@
 
 ## NOTE: This docke implementation is designed to be run on AWS on a debian buster.
 
-Parts of this project were borrowed in part from ianblenke/rtpengine-docker
+Forked from davidcsi combined with the guides of nick vs networking for a debian 11 docker compose for rtpengine
 
 ## Files
 
@@ -10,7 +10,6 @@ Parts of this project were borrowed in part from ianblenke/rtpengine-docker
 - `Makefile` merely calls `docker-compose build` and `docker-compose up` for local iteration convenience.
 - `README.md` is the file you are reading right now.
 - `docker-compose.yml` is a v2 config example, with some pre-defined defaults and a list of environment variables.
-- `rtpengine/` YOU MUST CLONE THIS.
 - `run.sh` script converts these environment variables into rtpengine daemon command-line options.
 
 ## Note:

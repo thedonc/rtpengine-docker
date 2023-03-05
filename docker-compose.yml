@@ -6,15 +6,17 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      #This is an attempt to get this to run on nonlinux machines
+      #dockerfile: built.dockerfile
     network_mode: host
     environment:
       # Comment the variables that you don't want to be used for the configuration
       RUN_RTPENGINE: "yes"
       #LISTEN_TCP: 25060
-      #LISTEN_UDP: 12222
-      LISTEN_NG: 0.0.0.0:8800
+      LISTEN_UDP: 12222
+      #LISTEN_NG: 0.0.0.0:8800
       LISTEN_CLI: 127.0.0.1:60001
-      # INTERFACES: "internal/12.23.34.45 external/23.34.45.54"
+      INTERFACES: "internal/12.23.34.45 external/23.34.45.54"
       # INTERFACES: "12.23.34.45!23.34.45.56"
       TIMEOUT: 60
       SILENT_TIMEOUT: 3600
