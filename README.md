@@ -1,7 +1,5 @@
 # docker-rtpengine
 
-## NOTE: This docke implementation is designed to be run on AWS on a debian buster.
-
 Forked from davidcsi combined with the guides of nick vs networking for a debian 11 docker compose for rtpengine
 
 ## Files
